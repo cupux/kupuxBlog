@@ -1,0 +1,40 @@
+{% extends 'myblog/base.html'%}
+
+{% block content %}
+
+<!-- ======================= hero_area end ========================== -->
+
+        
+<!-- ======================= main_wrapper start ========================== -->
+            <!-- this code is for blog_left_content -->
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="blog_left_content">
+                    
+
+                    <div class="single_blog padding_bottom">
+                       
+                        
+                        <!-- <div class="single_blog_content"> -->
+                            <h1>Your search "{{posts}}" does not exist</h1>
+                            
+                        <!-- </div> single_blog_content end -->
+                        
+                        
+                    </div> <!-- single_blog end -->
+
+                    
+                    {%include "myblog/pagination.html"%}
+
+
+                </div> <!-- blog_left_content end -->
+            </div> <!-- col-md-8 end -->
+
+
+           <!-- ********** this code is for blog_right_content ********** --> 
+
+<!-- ======================= main_wrapper end ========================== -->
+
+
+
+        
+{% endblock content %}

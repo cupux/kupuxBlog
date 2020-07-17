@@ -1,0 +1,35 @@
+{% extends 'myblog/adminbase.html'%}
+
+{% block content %}
+
+<!-- ======================= hero_area end ========================== -->
+{% load crispy_forms_tags %}
+        
+<!-- ======================= main_wrapper start ========================== -->
+            <!-- this code is for blog_left_content -->
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="blog_left_content">
+                    <h1 center>Add Category</h1>
+                    
+                    <form method="post">
+                        {% if messages %}
+                        {% for message in messages %}
+                        <div class="alert alert-info" role="alert">
+                            {{ message }}
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                        {% csrf_token %}
+                        {{ form.media }}
+                        {{ form|crispy }}
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Update</button>
+                        </div>
+                        
+                      </form>
+                </div> <!-- blog_left_content end -->
+            </div> <!-- col-md-8 end -->
+
+
+        
+{% endblock content %}

@@ -1,0 +1,39 @@
+{% extends 'myblog/base.html'%}
+
+{% block content %}
+                   <!-- this code is for blog_left_content -->
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="blog_left_content">
+                          
+
+                            <div class="single_blog padding_bottom">
+                                
+                                <div class="single_blog_content contact_page_content_lists">
+                                    
+                                    <div class="contact_page_info">
+                                        <ul>
+                                            <li><a href="tel:+88011222333"><i class="fa fa-phone"></i> + 233 545165405</a></li>
+                                            <li><a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i> kwesijoe1000@gmail.com</a></li>
+                                            <li><a href="#"><i class="fa fa-map-marker"></i> 123, Hatirjheel, Dhaka</a></li> 
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="contact_page_form">
+                                        <h2>send us message</h2>
+                                        <form action="mail.php" method="post">
+                                            <input name="name" type="text" placeholder="Name: ">
+                                            <input name="email" type="email" placeholder="Email: ">
+                                            <textarea name="message" placeholder="Message: "></textarea>
+                                            <input name="submit" type="submit" value="Send Message">
+                                        </form>
+                                    </div>
+                                    
+                                </div> <!-- single_blog_content end -->
+                                
+                            </div> <!-- single_blog end -->
+                            
+                            
+                        </div> <!-- blog_left_content end -->
+                    </div> <!-- col-md-8 end -->
+
+{% endblock content %}

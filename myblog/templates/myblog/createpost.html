@@ -1,0 +1,49 @@
+{% extends 'myblog/adminbase.html'%}
+
+{% block content %}
+
+<!-- ======================= hero_area end ========================== -->
+{% load crispy_forms_tags %}
+        
+<!-- ======================= main_wrapper start ========================== -->
+            <!-- this code is for blog_left_content -->
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="blog_left_content">
+                {% with url_name=request.resolver_match.url_name %}
+                    {% if url_name == 'create'%}
+                    <h1 center>Add Post</h1>
+                    {% elif url_name == 'edit'%}
+                    <h1 center>Update Post</h1>
+                    {% endif %}
+                {% endwith%}<br>
+                    
+                    <form method="post">
+                        {% if messages %}
+                        {% for message in messages %}
+                        <div class="alert alert-info" role="alert">
+                            {{ message }}
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                        {% csrf_token %}
+                        {{ form.media }}
+                        {{ form|crispy }}
+                        {% with url_name=request.resolver_match.url_name %}
+                        {% if url_name == 'create'%}
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Post</button>
+                        </div>
+                        {% elif url_name == 'edit'%}
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Update</button>
+                        </div>
+                        {% endif %}
+                    {% endwith%}
+                        
+                      </form>
+                </div> <!-- blog_left_content end -->
+            </div> <!-- col-md-8 end -->
+
+
+        
+{% endblock content %}

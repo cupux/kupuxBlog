@@ -1,0 +1,2111 @@
+/*-----------------------------------------------------------------------------------
+    Template Name:             Personee Blog Psd
+    Template URI:              ....................................
+    Description:               ....................................
+    CoDer :                    Kaniz Afroza Mou. 
+    CoDer's Site URL:          http://www.designbds.com/am/
+	Coder's facebook account:  https://www.facebook.com/afroza.mou.7
+	Coder's mail:              afroza969@gmail.com
+	skype ID:                  afroza.mou
+    Version:                   1.0
+-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+
+
+    1.  Default Css.
+	2.  header_area Css.
+        2.1  header_top Css.
+        2.2  header_bottom Css.
+    3.  hero_area Css.
+    4.  main_wrapper Css.
+        4.1  blog_left_content Css.
+        4.2  blog_right_content Css.
+    5.  instagram_area Css.
+    6.  footer_area Css.
+    7.  preloader Css.
+-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/*    1.     Default CSS
+/*-----------------------------------------------------------------------------------*/
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Droid Sans', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+a:hover, li {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.main_wrapper {
+    background-color: #ededed;
+}
+a:focus {
+    outline: none;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* this code is for float and overflow */
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+.fix {
+    overflow: hidden;
+}
+
+/* this code is for padding and headings */
+.section_padding {
+    padding: 70px 0;
+}
+.padding_bottom {
+    padding-bottom: 70px;
+}
+.padding_top {
+    padding-top: 70px;
+}
+.blog_headings {
+    font-size: 26px;
+    padding: 30px 0 15px;
+}
+.blog_headings a {
+    color: #303030;
+}
+.widget_padding {
+    padding: 40px 0;
+}
+.widget_padding_botttm {
+    padding-bottom: 40px;
+}
+.widget_headings {
+    font-weight: 700;
+    font-size: 16px;
+    color: #565656;
+    padding: 40px 0 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sub_widget_headings {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.sub_widget_headings a {
+    color: #303030;
+}
+
+/* all transition code is here */
+.header_bottom .mainmenu ul.nav.navbar-nav li a, .header_social_icon form input[type="search"], .hero_area .owl-nav div, .single_blog_content, .about_social a i, .single_widget_catagories li a, .single_widget_archive ul li a, .pagination_area ul li a, .single_instagram:after, .single_footer a i, .single_blog_footer p a i, .scroll p, .scroll_top i, .single_widget_form a i, .single_blog_page_author_social a i {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+/* this code is for hover */
+.single_footer a i:hover, .about_social a i:hover, .single_blog_page_author_social a i:hover {
+    color: #a6a6a6;
+}
+.single_blog:hover .single_blog_content {
+    box-shadow: 0 0 18px rgba(0, 0, 0,.11);
+}
+.single_blog_footer span a i:hover {
+    color: #2b2b2b;
+}
+.pagination_area ul li a:hover, .single_widget_archive ul li a:hover, .single_widget_catagories li a:hover, .scroll:hover p {
+    color: #adab0b;
+}
+.single_blog_footer p a:hover i {
+    margin-left: 15px;
+}
+.scroll_top i:hover {
+    background-color: #adab0b;
+    border: 1px solid #adab0b;
+    color: #fff;
+}
+.single_widget_form:hover a i {
+    color: #adab0b;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    2.1     header_top CSS
+/*-----------------------------------------------------------------------------------*/
+.logo {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    2.2     header_bottom CSS
+/*-----------------------------------------------------------------------------------*/
+.header_bottom .mainmenu ul.nav.navbar-nav {
+    text-align: left;
+    float: none;
+    padding-bottom: 15px;
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li {
+    float: none;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 15px;
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li a {
+    color: #161616;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li a i.submenu_up {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -8px;
+    transition: 0.2s;
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li:hover i.submenu_up {
+    transform: rotate(90deg);
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li:hover a, .header_bottom .mainmenu ul.nav.navbar-nav li.active a {
+    background-color: transparent;
+    color: #3fcf7b;
+}
+.header_bottom .nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+}
+.header_social_icon {
+    overflow: hidden;
+    padding: 19px 0;
+    float: right;
+    margin-top: 17px;
+}
+.header_social_icon a i {
+    color: #2b2b2b;
+    float: left;
+    font-size: 12px;
+    padding: 5px 10px 0;
+}
+.header_social_icon a i:hover {
+    color: #adab0b;
+}
+.header_social_icon > form {
+    float: left;
+    border-left: 1px solid #828282;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.header_social_icon form input[type="search"] {
+    background: rgba(0, 0, 0, 0) url("../img/search.png") no-repeat scroll 0 5px;
+    border: medium none;
+    padding: 3px 10px;
+    text-indent: -9999px;
+    width: 20px;
+    cursor: pointer;
+    color: #2b2b2b;
+}
+.header_social_icon form input[type="search"]:focus {
+    width: 180px;
+    text-indent: 0;
+    background: none repeat scroll 0 5px #eeeeee;
+}
+
+/* this code is for sub-menu */
+.header_bottom .mainmenu ul.nav.navbar-nav li ul.sub-menu {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #adab0b;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    top: 200%;
+    z-index: -9;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li ul.sub-menu li a {
+    color: #fff;
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li ul.sub-menu li {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #97770d;
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li ul.sub-menu li:last-child {
+    border: none;
+}
+.header_bottom .mainmenu ul.nav.navbar-nav li:hover ul.sub-menu {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+ul.sub-menu {
+    transition: 0.5s;
+}
+.index_six .header_social_icon {
+  padding: 32px 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    3.     hero_area CSS
+/*-----------------------------------------------------------------------------------*/
+
+/* this style is for index-1, index-2, index-3, index-4, index-5, index-6 's hero_area */
+.index_one .hero_area, .index_two .hero_area, .index_three .hero_area, .index_six .hero_area {
+    overflow: hidden;
+}
+.index_one .hero_area_list.owl-carousel .owl-stage-outer, .index_two .hero_area_list.owl-carousel .owl-stage-outer, .index_three .hero_area_list.owl-carousel .owl-stage-outer, .index_six .hero_area_list.owl-carousel .owl-stage-outer {
+    overflow: inherit;
+}
+.index_one .hero_area_list:before, .index_one .hero_area_list:after, .index_two .hero_area_list:before, .index_two .hero_area_list:after, .index_three .hero_area_list:before, .index_three .hero_area_list:after, .index_six .hero_area_list:before, .index_six .hero_area_list:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 9;
+}
+.hero_area_item {
+    position: relative;
+}
+.hero_area_item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    background-color: transparent;
+}
+.hero_area_text {
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.hero_area .owl-item.active .hero_area_text {
+    opacity: 1;
+    visibility: visible;
+}
+.hero_area_table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.hero_area_text_content {
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    display: inline-block;
+}
+.hero_area_text p.hero_area_btn a {
+    background-color: #adab0b;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    width: 124px;
+    line-height: 40px;
+    display: block;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.hero_area_text h1 {
+    font-size: 26px;
+    padding: 25px 0 15px;
+}
+.hero_area_text h1 a {
+    color: #000;
+}
+.hero_area p .fa.fa-calendar {
+    color: #4e4e4e;
+    margin-right: 10px;
+}
+.hero_area .owl-nav div {
+    position: absolute;
+    top: 50%;
+    color: #2d2d2d;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    z-index: 99;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0.80;
+    margin-top: -15px;
+    font-size: 20px;
+}
+.hero_area .owl-nav .owl-prev {
+    left: 0;
+}
+.hero_area .owl-nav .owl-next {
+    right: 0;
+    left: auto;
+}
+.hero_area .owl-nav div:hover {
+    color: #adab0b;
+}
+
+.jkm{
+    border: #000!important;
+}
+
+/* this code is for index_one */
+.index_one .hero_area_list:before, .index_one .hero_area_list:after {
+    width: 25px;
+    background-color: #fff;
+}
+.index_one .hero_area_list:after {
+    right: -25px;
+}
+.index_one .hero_area_list:before {
+    left: -25px;
+}
+.index_one .hero_area .owl-item.active .hero_area_item:before {
+    background-color: rgba(0,0,0,.50);
+}
+.index_one .hero_area_text {
+    top: 0;
+    transition: visibility 0s linear 0s, opacity 0.5s ease 0.3s;
+    text-align: center;
+}
+.index_one .hero_area_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.index_one .hero_area_text_content {
+    padding: 25px 60px;
+}
+.index_one .hero_area_text p {
+    color: #4e4e4e;
+    font-size: 12px;
+}
+
+/* this code is for index_two */
+.index_two .hero_area_list:before, .index_two .hero_area_list:after {
+    width: 5000px;
+    background-color: rgba(255,255,255,0.3);
+}
+.index_two .hero_area_list:after {
+    right: -5000px;
+}
+.index_two .hero_area_list:before {
+    left: -5000px;
+}
+.index_two .hero_area_text {
+    top: 100%;
+    transition: 0.5s;
+}
+.index_two .hero_area .owl-item.active .hero_area_text {
+    top: calc(100% - 150px);
+}
+.index_two .hero_area_table_cell {
+    display: table-cell;
+}
+.index_two .hero_area_text_content {
+    height: 150px;
+    padding: 10px;
+    width: 350px;
+}
+
+/* this code is for index_three */
+.index_three .hero_area_list:before, .index_three .hero_area_list:after {
+    width: 25px;
+    background-color: #fff;
+}
+.index_three .hero_area_list:after {
+    right: -25px;
+}
+.index_three .hero_area_list:before {
+    left: -25px;
+}
+.index_three .hero_area .owl-item.active .hero_area_item:before {
+    background-color: rgba(0,0,0,.50);
+}
+.index_three .hero_area_text {
+    top: 0;
+    text-align: center;
+    transition: visibility 0s linear 0s, opacity .3s ease 0.2s;
+}
+.index_three .hero_area_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.index_three .hero_area_text_content {
+    background-color: #ffffff;
+    display: inline-block;
+    height: 130px;
+    padding: 20px 0;
+    text-align: center;
+    width: 220px;
+}
+.index_three .hero_area_text p.hero_area_btn a {
+    font-size: 13px;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+.index_three .hero_area_text h1 {
+    font-size: 18px;
+    padding: 15px 0 10px;
+}
+.index_three .hero_area_text p {
+    color: #4e4e4e;
+    font-size: 12px;
+}
+
+/* this code is for index_four */
+.index_four .hero_area .owl-item.active .hero_area_item:before {
+    background-color: rgba(0,0,0,.50);
+}
+.index_four .hero_area_text {
+    top: 0;
+    text-align: center;
+    transition: visibility 0s linear 0s, opacity .3s ease 0.2s;
+}
+.index_four .hero_area_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.index_four .hero_area_text_content {
+    background-color: #ffffff;
+    padding: 22px 0;
+    width: 350px;
+    height: 160px;
+}
+.index_four .hero_area_text h1 {
+    font-size: 20px;
+    padding: 25px 0 15px;
+}
+.index_four .hero_area_text p {
+    color: #4e4e4e;
+    font-size: 12px;
+}
+
+/* this code is for index_five */
+.index_five .hero_area .owl-item.active .hero_area_item:before {
+    background-color: rgba(0,0,0,.25);
+}
+.index_five .hero_area_text {
+    top: 0;
+    text-align: center;
+    transition: visibility 0s linear 0s, opacity .8s ease 0.5s;
+}
+.index_five .hero_area_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.index_five .hero_area_text_content {
+    background-color: rgba(255,255,255,0.9);
+    padding: 40px 90px;
+}
+.index_five .hero_area_text p {
+    color: #4e4e4e;
+    font-size: 12px;
+}
+
+/* this code is for index_six */
+.index_six .hero_area_list:before, .index_six .hero_area_list:after {
+    width: 25px;
+    background-color: #fff;
+}
+.index_six .hero_area_list:after {
+    right: -25px;
+}
+.index_six .hero_area_list:before {
+    left: -25px;
+}
+.index_six .hero_area .owl-item.active .hero_area_item:before {
+    background-color: rgba(0,0,0,.50);
+}
+.index_six .hero_area_text {
+    top: 40px;
+    text-align: center;
+    transition: visibility 0s linear 0s, opacity 0.7s ease 0.5s;
+}
+.index_six .hero_area_text_content {
+    background-color: rgba(255,255,255,1);
+    padding: 25px 90px;
+}
+.index_six .hero_area_text p {
+    color: #4e4e4e;
+    font-size: 14px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    4.1.     blog_left_content CSS
+/*-----------------------------------------------------------------------------------*/
+.single_blog_top img {
+    width: 100%;
+}
+.slides_lists .item > img {
+    width: 100%;
+}
+.single_blog_content {
+    background-color: #fff;
+    padding: 0 35px 30px;
+}
+.blog_sound_cloud {
+    background-color: #fff;
+}
+.single_blog_meta {
+    padding-bottom: 5px;
+}
+.single_blog_meta li {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 12px;
+}
+.single_blog_meta li a {
+    color: #4e4e4e;
+}
+.single_blog_meta li span {
+    margin-right: 10px;
+}
+.single_blog_bottom p {
+    font-size: 15px;
+    color: #454545;
+    line-height: 30px;
+    padding: 25px 0;
+}
+.single_blog_footer {
+    overflow: hidden;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+.single_blog_footer p a {
+    color: #000;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    float: left;
+}
+.single_blog_footer p a i {
+    margin-left: 5px;
+}
+.single_blog_footer span.footer_social {
+    float: right;
+}
+.footer_share {
+    padding: 8px;
+    font-size: 13px;
+    color: #808080;
+    float: left;
+}
+.single_blog_footer span a i {
+    color: #767676;
+    font-size: 14px;
+}
+
+/* this code is for video */
+.video_control i {
+    border-radius: 50%;
+    height: 130px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 130px;
+    border: 3px solid #fff;
+    text-align: center;
+    line-height: 130px;
+    font-size: 40px;
+    margin-top: -75px;
+    margin-left: -75px;
+    color: #fff;
+}
+/* video_area end */
+
+/* this code is for sound_cloud */
+.blog_sound_cloud iframe {
+    width: 100%;
+}
+
+/* this code is for pagination area */
+.pagination_area {
+    text-align: center;
+}
+.index_six .pagination_area {
+    padding-bottom: 70px;
+}
+.pagination_area ul li {
+    display: inline-block;
+}
+.pagination_area ul li a {
+    color: #383838;
+    font-size: 14px;
+}
+
+/* this code is for single blog form */
+.single_blog_form {
+    padding: 70px 0 40px ;
+    overflow: hidden;
+}
+.single_blog_form p {
+    float: left;
+    font-size: 18px;
+    color: #000;
+    padding-right: 30px;
+}
+.single_blog_form p span {
+    font-size: 20px;
+    color: #303030;
+    text-transform: uppercase;
+}
+.single_blog_form form {
+    float: left;
+    margin-right: 20px;
+}
+.single_blog_form form input[type=email] {
+    height: 35px;
+    border: 1px solid #3a3b3a;
+    border-right: #383837;
+    font-size: 14px;
+    color: #707070;
+}
+.single_blog_form form input[type=submit] {
+    width: 90px;
+    height: 32px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background-color: #3c3d3c;
+    border: none;
+    margin-left: 12px;
+}
+/* single_blog form end */
+
+/* this code is for single_blog_content mark */
+.single_blog_top {
+    position: relative;
+}
+.mark_left {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #2ecc71;
+    padding: 0 15px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    text-transform: uppercase;
+    z-index: 9;
+    color: #fff;
+}
+.mark_left a {
+    color: #fafafa;
+}
+.mark_right {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 40px;
+    height: 65px;
+    background-color: #fff;
+    z-index: 9;
+}
+.mark_right:before {
+    border-right: 20px solid transparent;
+    border-top: 25px solid #fff;
+    bottom: -38%;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+.mark_right:after {
+    border-left: 20px solid transparent;
+    border-top: 25px solid #fff;
+    bottom: -38%;
+    content: "";
+    height: 0;
+    right: 0;
+    position: absolute;
+    width: 0;
+}
+.mark_right i {
+    bottom: 8px;
+    color: #2ecc71;
+    left: 50%;
+    margin-left: -7px;
+    position: absolute;
+}
+/* mark end */
+
+/* this code is for blog_content_slider */
+.single_blog .slider_left, .single_blog .slider_right {
+	position: absolute;
+	color: #fff;
+	top: 50%;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 5px;
+	margin-top: -25px;
+}
+.single_blog .slider_left {
+	left: 30px;
+}
+.single_blog .slider_right {
+	right: 30px;
+}
+.single_blog .slider_right:hover, .single_blog .slider_right:focus {
+	outline: none;
+}
+.single_widget_content > img {
+    width: 100%;
+}
+
+/* ======= this code is for index_one ======= */
+.index_one .single_blog_footer p a {
+    width: 170px;
+}
+.single_blog_footer span a i {
+    padding: 10px 5px;
+}
+.index_one .pagination_area ul li {
+    padding: 0 10px;
+}
+.index_one .single_blog_form form input[type=email] {
+    width: 300px;
+}
+
+/* ======= this code is for index_two ======= */
+.index_two .single_blog_footer p a {
+    width: 150px;
+}
+.index_two .single_blog_footer span a i {
+    padding: 10px 3px;
+}
+.index_two .blog_sound_cloud iframe {
+    height: 398px;
+}
+.index_two .pagination_area ul li a {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    line-height: 30px;
+    display: block;
+}
+.index_two .single_blog_form form input[type=email] {
+    width: 270px;
+}
+.index_two .mark_right {
+    right: 30px;
+}
+.index_two .blog_headings {
+  font-size: 18px;
+}
+
+/* ======= this code is for index_three ======= */
+.index_three .blog_sound_cloud iframe {
+    height: 410px;
+}
+.index_three .pagination_area ul li a {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    line-height: 30px;
+    display: block;
+}
+.index_three .single_blog_form form input[type="email"] {
+    width: 660px;
+}
+
+/* ======= this code is for index_four ======= */
+.index_four .single_blog_footer p a {
+    width: 150px;
+}
+.index_four .single_blog_footer span a i {
+    padding: 10px 3px;
+}
+.index_four .blog_sound_cloud iframe {
+    height: 398px;
+}
+.index_four .pagination_area ul li a {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    line-height: 30px;
+    display: block;
+}
+.index_four .mark_right {
+    right: 30px;
+}
+.index_four .blog_headings {
+  font-size: 18px;
+}
+.index_four .single_blog_form form input[type=email] {
+    width: 270px;
+}
+
+/* ======= this code is for index_five ======= */
+.index_five .blog_sound_cloud iframe {
+    height: 155px;
+}
+.index_five .pagination_area ul li {
+    padding: 0 10px;
+}
+.index_five .pagination_area ul li a {
+    color: #383838;
+    font-size: 14px;
+}
+.index_five .single_blog_form form input[type="email"] {
+    width: 300px;
+}
+
+/* ======= this code is for index_six ======= */
+.index_six .blog_sound_cloud iframe {
+    height: 408px;
+}
+.index_six .pagination_area ul li {
+    padding: 0 10px;
+}
+.index_six .pagination_area ul li a {
+    color: #383838;
+    font-size: 14px;
+}
+.index_six .single_blog_form form input[type="email"] {
+    width: 500px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    4.2.     blog_right_content CSS
+/*-----------------------------------------------------------------------------------*/
+.single_widget_content {
+    background-color: #fff;
+}
+.about_img img {
+    width: 100%;
+}
+.single_widget_about p {
+    font-size: 15px;
+    color: #2b2b2b;
+    line-height: 30px;
+    background: url(../img/about_para_bg.png) no-repeat scroll top center;
+    text-align: left;
+    padding-top: 30px;
+    margin-top: 5px;
+}
+.about_social {
+    padding-top: 10px;
+}
+.about_social a i, .single_blog_page_author_social a i {
+    font-size: 14px;
+    color: #2b2b2b;
+    padding-right: 10px;
+}
+.single_widget_form form input[type=search] {
+    width: 85%;
+    padding: 0 15px;
+    height: 42px;
+    border: 1px solid #dcdbdc;
+    border-right: none;
+    font-size: 14px;
+    color: #7f7f7f;
+    float: left;
+}
+.single_widget_form a i {
+    width: 40px;
+    height: 42px;
+    line-height: 42px;
+    color: #7f7f7f;
+    border: 1px solid #dcdbdc;
+    border-left: none;
+    text-align: center;
+    font-size: 16px;
+}
+.single_widget_about, .single_widget_form, .single_widget_catagories, .singel_widget_tab, .singel_widget_recentpost, .single_widget_review, .single_widget_archive {
+    padding: 0 40px 40px;
+}
+.single_widget_review_list {
+    padding-bottom: 40px;
+}
+.recentpost_list:last-child, .single_widget_review_list:last-child {
+    padding-bottom: 0;
+}
+.recentpost_list p, .single_widget_review_list p {
+    padding-left: 60px;
+}
+.single_product_list p span, .recentpost_list p span, .single_widget_review_list p span {
+    display: block;
+}
+.single_widget_catagories li {
+    color: #2c2c2c;
+    font-size: 16px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.single_widget_catagories ul li {
+    position: relative;
+}
+
+.single_widget_catagories ul li span.catogorie_name {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+}
+.single_widget_catagories ul li span.catagorie_count {
+    float: right;
+}
+.single_widget_catagories li a {
+    color: #2c2c2c;
+}
+.singel_widget_tab {
+    padding-top: 40px;
+}
+.product_list_wrapper.tab-content {
+    padding-top: 40px;
+}
+.singel_widget_tab .nav.nav-tabs {
+    border-bottom: none;
+}
+.singel_widget_tab .nav.nav-tabs li {
+    padding: 0 8px;
+}
+.singel_widget_tab .nav.nav-tabs a {
+    background-color: #f0f0f0;
+    border-radius: 0;
+    color: #000;
+    padding: 5px 14px;
+    border: none;
+}
+.singel_widget_tab .nav.nav-tabs li.active a {
+    border: none;
+    background-color: #2ecc71;
+    color: #fff;
+}
+.single_product_list p {
+    padding: 15px 0 0 90px;
+}
+.single_product_list, .recentpost_list {
+    border-bottom: 1px solid #d7d7d7;
+    padding: 20px 0;
+}
+.single_product_list:first-child, .recentpost_list:first-child {
+    padding-top: 0;
+}
+.single_product_list:last-child, .recentpost_list:last-child {
+    border: none;
+}
+.singel_widget_tab p span , .recentpost_list p span {
+    font-size: 12px;
+    color: #6b6b6b;
+}
+.singel_widget_tab p span i, .recentpost_list p span i {
+    color: #000;
+    padding-right: 10px;
+}
+.single_widget_review_list p span i {
+    font-size: 12px;
+    color: #c5c5c5;
+}
+.single_widget_review_list p span i.active {
+    color: #2ecc71;
+}
+.single_widget_archive ul li {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.single_widget_archive ul li a {
+    color: #565656;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    5.     instagram_area CSS
+/*-----------------------------------------------------------------------------------*/
+.instagram_area {
+    overflow: hidden;
+}
+.instagram_area h5 {
+    text-align: center;
+    font-weight: 700;
+    color: #565656;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+#instafeed a {
+    display: block;
+    float: left;
+    width: 16.6666667%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    6.     footer_area CSS
+/*-----------------------------------------------------------------------------------*/
+.footer_area {
+    position: relative;
+}
+.single_footer h5 {
+    font-size: 18px;
+    color: #2f2f2f;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.single_footer p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 24px;
+}
+.single_footer a i {
+    color: #2b2b2b;
+    font-size: 18px;
+    padding: 25px 20px 0 0;
+}
+.single_footer.copyright_text p {
+    text-align: right;
+    font-size: 12px;
+}
+.single_footer.copyright_text p a {
+    color: #6f6f6f;
+}
+.single_footer.copyright_text {
+    padding: 30px 0 20px;
+}
+/* this code is for scroll to top */
+.scroll {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.scroll p {
+    font-size: 12px;
+    color: #2d2d2d;
+    text-align: center;
+}
+.scroll_top i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #444444;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    7.     preloader CSS
+/*-----------------------------------------------------------------------------------*/
+body.preloader_active {
+    position: absolute;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 99999999999;
+}
+.preloader_spinner {
+    background: url(../img/preloader.GIF) no-repeat scroll center center;
+    display: block;
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 999999999999;
+    margin-top: -32px;
+    margin-left: -32px;
+}
+/* =============================== 
+    this code is for single_post page
+ =============================== */
+.single_blog_bottom blockquote.single_blog_page_quote {
+    font-size: 18px;
+    color: #393939;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 25px;
+    position: relative;
+    padding: 25px 0;
+    border-left: 0;
+}
+.single_blog_bottom blockquote.single_blog_page_quote:after, .single_blog_bottom blockquote.single_blog_page_quote:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background-color: #2ecc71;
+    margin-left: 10%;
+}
+.single_blog_bottom blockquote.single_blog_page_quote:after {
+    top: 0;
+} 
+.single_blog_bottom blockquote.single_blog_page_quote:before {
+    bottom: 0;
+}
+.single_blog_content.single_blog_page_author {
+    padding-top: 25px;
+    overflow: hidden;
+}
+.single_blog_content.single_blog_page_author h3 {
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #565656;
+    font-weight: 700;
+}
+.single_blog_content.single_blog_page_author h3 span {
+    padding-left: 10px;
+    font-size: 16px;
+    color: #4f4f4f;
+    font-weight: 400;
+    position: relative;
+    margin-left: 10px;
+}
+.single_blog_content.single_blog_page_author h3 span:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 1px;
+    width: 5px;
+    background-color: #2ecc71;
+    top: 50%;
+}
+.single_blog_page_author_img {
+    float: left;
+}
+.single_blog_page_author_para {
+    padding-left: 160px;
+}
+.single_blog_page_author_para p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #2b2b2b;
+    line-height: 30px;
+}
+.single_blog_page_author_social {
+    padding-top: 25px;
+}
+.single_blog_content.single_blog_page_might_like_lists {
+    padding-top: 25px;
+}
+.single_blog_content.single_blog_page_might_like_lists h2 {
+    font-size: 18px;
+    color: #565656;
+    font-weight: 700;
+    padding-bottom: 25px;
+    padding-left: 15px;
+}
+.single_blog_page_might_like h3 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+.single_blog_page_might_like h3 a {
+    color: #232323;
+}
+.single_blog_page_might_like p {
+    padding-top: 20px;
+    color: #4e4e4e;
+}
+.single_blog_page_might_like p span {
+    color: #a3a3a3;
+    padding-right: 15px;
+}
+.single_blog_content.single_blog_page_comments_lists {
+    padding-top: 25px;
+}
+.single_blog_content.single_blog_page_comments_lists h2 {
+    font-size: 18px;
+    color: #565656;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.single_blog_page_single_comments {
+    padding-bottom: 55px;
+    overflow: hidden;
+}
+.single_blog_page_single_comments.even {
+    padding-left: 140px;
+}
+.singel_blog_page_commentars {
+    float: left;
+}
+.single_blog_page_comments_content {
+    padding-left: 120px;
+}
+.single_blog_page_comments_content h3 {
+    font-size: 16px;
+}
+.single_blog_page_comments_content h3 a {
+    color: #292929;
+}
+.single_blog_page_comments_content h3 span.icon-calendar {
+    padding: 0 10px;
+}
+.single_blog_page_comments_content h3 span {
+    font-size: 12px;
+    color: #4e4e4e;
+    word-spacing: 10px;
+}
+.single_blog_page_comments_content p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #595959;
+    padding-top: 30px;
+}
+.single_blog_page_comments_content p.reply {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.single_blog_page_comments_content p.reply a {
+    color: #2ecc71;
+}
+.single_blog_page_form input[type=text], .single_blog_page_form input[type=email], .single_blog_page_form input[type=text] {
+    width: 32%;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    margin-right: 9px;
+    margin-bottom: 30px;
+    color: #a8a8a8;
+}
+#website {
+    margin-right: 0;
+}
+.single_blog_page_form textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    color: #a8a8a8;
+    margin-bottom: 35px;
+    height: 150px;
+}
+.single_blog_page_form input[type=submit] {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    height: 35px;
+    width: 170px;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+/* =============================== 
+    this code is for contact page
+ =============================== */
+#my_location {
+    height: 450px;
+}
+.contact_page_info {
+    padding-top: 30px;
+}
+.contact_page_info li {
+    display: inline-block;
+    padding: 0 32px;
+}
+.contact_page_info li a {
+    color: #424242;
+    font-size: 16px;
+}
+.contact_page_info li a i {
+    font-size: 18px;
+    color: #2ecc71;
+    padding-right: 10px;
+}
+.contact_page_form h2 {
+    font-size: 18px;
+    color: #565656;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact_page_form form input[type=text], .contact_page_form form input[type=email] {
+    width: 48%;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    color: #a8a8a8;
+}
+.contact_page_form form input[type=email] {
+    margin-right: 0;
+}
+.contact_page_form form textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    color: #a8a8a8;
+    margin-bottom: 35px;
+    height: 150px;
+}
+.contact_page_form form input[type=submit] {
+    color: #fff;
+    background-color: #2ecc71;
+    text-align: center;
+    height: 40px;
+    width: 170px;
+    line-height: 40px;
+    border: none;
+}
+
+.success-record {
+    color: #38c33d;
+    margin-bottom: 30px;
+}
+/************************************** 
+            This Code is For Responsive 
+        ******************************************/
+/* ========================================
+                For Large Screen
+================================================= */
+@media only screen and (min-width: 1920px) {
+}
+/* ========================================
+                For Medium_Large Screen
+================================================= */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+}
+/* ============================================
+                For Medium Screen
+============================================== */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header_social_icon form input[type="search"]:focus {
+        width: 140px;
+    }
+    .single_widget_form form input[type="search"] {
+        width: 80%;
+    }
+    .singel_widget_tab .nav.nav-tabs a {
+        padding: 5px 10px;
+    }
+    .singel_widget_tab .nav.nav-tabs li {
+        padding: 0 2px;
+    }
+    .single_footer a i {
+        padding: 15px 12px 0 0;
+    }
+    .single_blog_form p {
+        font-size: 16px;
+        padding-right: 10px;
+    }
+    .single_blog_form p span {
+        font-size: 18px;
+    }
+    .single_blog_form form input[type="email"] {
+        font-size: 12px;
+        padding-left: 10px;
+        width: 225px;
+    }
+    .single_blog_form form input[type="submit"] {
+        margin-left: 5px;
+    }
+    .index_one .single_blog_form form input[type="email"] {
+        width: 228px;
+    }
+    .index_two .single_blog_footer span.footer_social, .index_four .single_blog_footer span.footer_social {
+        float: left;
+    }
+    .index_two .single_blog_form form input[type="email"] {
+        width: 198px;
+    }
+    .index_two .blog_sound_cloud iframe {
+        height: 300px;
+    }
+    .index_three .blog_headings {
+        font-size: 22px;
+    }
+    .index_three .single_blog_meta li {
+        padding-right: 5px;
+    }
+    .index_three .single_blog_meta li span {
+        margin-right: 5px;
+    }
+    .index_three .blog_sound_cloud iframe {
+        height: 330px;
+    }
+    .index_three .single_blog_form p {
+        padding-bottom: 30px;
+    }
+    .index_four .hero_area_text h1 {
+        font-size: 18px;
+    }
+    .index_four .hero_area_text_content {
+        height: 149px;
+        width: 280px;
+    }
+    .index_four .blog_sound_cloud iframe {
+        height: 325px;
+    }
+    .index_four .single_blog_form form input[type="email"] {
+        width: 195px;
+    }
+    .index_five .single_blog_form form input[type="email"] {
+        width: 226px;
+    }
+    /* ======================== this code is for contact page ========================= */
+    .contact_page_info li {
+        padding: 0 10px;
+    }
+    /* ==================== this code is for single page =================== */
+    .single_blog_page_single_comments.even {
+        padding-left: 50px;
+    }
+    .single_blog_page_form input[type="text"], .single_blog_page_form input[type="email"], .single_blog_page_form input[type="text"] {
+        width: 31%;
+    }
+}
+/* ============================================
+                For Tablet layout
+============================================== */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* default Css */
+    .blog_headings {
+        font-size: 24px;
+    }
+    .widget_headings {
+        padding: 30px 0 20px;
+    }
+    /* default Css end */
+    .header_bottom .mainmenu ul.nav.navbar-nav li a {
+        font-size: 14px;
+        padding: 0 11px 0;
+    }
+    .header_bottom .mainmenu ul.nav.navbar-nav {
+        margin-top: 20px;
+    }
+    .header_bottom .mainmenu ul.nav.navbar-nav li:hover ul.sub-menu {
+        top: 100%;
+    }
+    .header_social_icon form input[type="search"]:focus {
+        width: 120px;
+    }
+    .hero_area_text_content {
+        padding: 15px 20px;
+    }
+    .hero_area_text h1 {
+        font-size: 20px;
+        padding: 25px 0 15px;
+    }
+    .hero_area_text p.hero_area_btn a {
+        font-size: 13px;
+        height: 35px;
+        line-height: 35px;
+        width: 100px;
+    }
+    .single_blog_meta li {
+        padding-right: 8px;
+    }
+    .single_blog_meta li span {
+        margin-right: 8px;
+    }
+    .single_blog_form > p {
+        padding: 0 0 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .index_one .single_blog_form form input[type="email"] {
+        width: 292px;
+    }
+    .single_widget_about, .single_widget_form, .single_widget_catagories, .singel_widget_tab, .singel_widget_recentpost, .single_widget_review, .single_widget_archive {
+        padding: 0 20px 20px;
+    }
+    .single_widget_form form input[type="search"] {
+        width: 77%;
+    }
+    .single_widget_catagories li {
+        font-size: 14px;
+    }
+    .singel_widget_tab {
+        padding-top: 30px;
+    }
+    .singel_widget_tab .nav.nav-tabs li {
+        padding: 0 2px;
+    }
+    .singel_widget_tab .nav.nav-tabs a {
+        font-size: 13px;
+        padding: 5px;
+    }
+    .single_product_list p {
+        padding: 0 0 0 90px;
+    }
+    .index_one .hero_area_text_content {
+        padding: 25px 30px;
+    }
+    .index_two .hero_area .owl-item.active .hero_area_text {
+        top: calc(100% - 120px);
+    }
+    .index_two .hero_area_text_content {
+        height: 120px;
+        width: 300px;
+    }
+    .index_two .hero_area_text h1 {
+        font-size: 20px;
+        padding: 12px 0 10px;
+    }
+    .single_blog_content {
+        padding: 0 20px 30px;
+    }
+    .index_two .single_blog_footer span.footer_social {
+        float: left;
+    }
+    .index_two .single_blog_footer span a i {
+        padding: 10px 5px;
+    }
+    .index_three .single_blog_footer span.footer_social {
+        float: left;
+    }
+    .index_three .blog_sound_cloud iframe {
+        height: 250px;
+    }
+    .index_three .blog_headings {
+        font-size: 18px;
+    }
+    .index_three .single_blog_form form input[type="email"] {
+        width: 540px;
+    }
+    .index_four .single_blog_footer span.footer_social {
+        float: left;
+    }
+    .index_four .blog_sound_cloud iframe {
+        height: 240px;
+    }
+    .index_five .hero_area_text_content {
+        height: 160px;
+        padding: 35px 5px;
+        width: 310px;
+    }
+    .index_five .hero_area_text h1 {
+        padding: 15px 0 10px;
+    }
+    .index_six .hero_area_text_content {
+        padding: 25px 40px;
+    }
+    .index_six .footer_share {
+        padding: 8px 8px 0 0;
+    }
+    .index_six .single_blog_footer span.footer_social {
+        float: left;
+    }
+    .index_six .blog_sound_cloud iframe {
+        height: 245px;
+    }
+    .index_six .pagination_area {
+        padding-bottom: 30px;
+    }
+    .index_six .single_footer.copyright_text {
+    padding: 0 0 20px;
+    }
+    /* this code is for iframe */
+    .index_two .blog_sound_cloud iframe {
+        height: 240px;
+    }
+    .index_six .single_footer a i {
+        padding: 8px 20px 0 0;
+    }
+    /* this code is for mark */
+    .index_two .mark_left, .index_four .mark_left {
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .index_two .mark_right, .index_four .mark_right {
+        height: 40px;
+        width: 30px;
+    }
+    .index_two .mark_right:before, .index_four .mark_right:before {
+        bottom: -50%;
+    }
+    .index_two .mark_right:after, .index_four .mark_right:after {
+        bottom: -50%;
+    }
+    /* this responsive is for video */
+    .index_two .video_control i, .index_four .video_control i {
+        border: 2px solid #fff;
+        font-size: 20px;
+        height: 80px;
+        line-height: 80px;
+        margin-left: -40px;
+        margin-top: -40px;
+        width: 80px;
+    }
+    /* ===================== this code is for contact page ===================== */
+    .contact_page_info li {
+        padding: 0 20px 12px 0;
+    }
+    .contact_page_form form input[type="text"], .contact_page_form form input[type="email"] {
+        width: 100%;
+    }
+    /* ================== this code is for singel page ==================== */
+    .single_blog_page_might_like h3 {
+        font-size: 15px;
+    }
+    .single_blog_page_single_comments.even {
+        padding-left: 0;
+    }
+    .single_blog_page_form input[type="text"], .single_blog_page_form input[type="email"], .single_blog_page_form input[type="text"] {
+        width: 100%;
+    }
+    .sub_widget_headings {
+        font-size: 15px;
+    }
+}
+/* ============================================
+                For Small mobile
+============================================== */
+@media only screen and (max-width: 767px) {
+    .logo {
+        padding: 25px 0;
+    }
+    .header_social_icon {
+        float: none;
+    }
+    .header_social_icon > form {
+        border: none;
+        float: right;
+        margin-left: 0px;
+        padding-left: 20px;
+    }    
+    .header_social_icon form input[type="search"]:focus {
+        width: 120px;
+    }
+    /* this code is for mobile menu */
+    .header_bottom .navbar-header {
+        text-align: left;
+    }
+    .header_bottom .navbar-toggle {
+        border: 1px solid #adab0b;
+        float: none;
+        margin-right: 0;
+    }
+    .header_bottom .navbar-toggle .icon-bar {
+        background-color: #adab0b;
+    }
+    .header_bottom .mainmenu ul.nav.navbar-nav li:last-child a { 
+        border-bottom: 0px;
+    }
+    .header_bottom .navbar-collapse {
+        border: 0;
+        box-shadow: none;
+    }
+    .header_bottom .mainmenu ul.nav.navbar-nav li {
+        display: block;
+    }
+    .header_bottom .mainmenu ul.nav.navbar-nav li a {
+        border-bottom: 1px solid #e1e1e1;
+        font-size: 14px;
+        padding: 10px 0;
+        text-align: center;
+        color: #161616;
+        display: block;
+    }
+    .header_bottom .mainmenu ul.nav.navbar-nav li ul.sub-menu, .header_bottom .mainmenu ul.nav.navbar-nav li a i.submenu_up {
+        display: none;
+    }
+    /* mobile menu end */
+    
+    /* this code is for hero_area */
+    .index_one .hero_area_text_content {
+        padding: 10px 8px;
+    }
+    .index_two .hero_area_list.owl-carousel .owl-stage-outer {
+        overflow: hidden;
+    }
+    .index_two .hero_area .owl-item.active .hero_area_text {
+        top: calc(100% - 80px);
+    }
+    .index_two .hero_area_text_content {
+        height: 80px;
+        width: 180px;
+    }
+    .index_three .hero_area_text_content {
+        background-color: #ffffff;
+        height: 110px;
+        padding: 14px 0;
+        width: 200px;
+    }
+    .index_four .hero_area_text_content {
+        background-color: #ffffff;
+        height: 120px;
+        padding: 12px 0;
+        width: 200px;
+    }
+    .index_three .hero_area_text h1, .index_four .hero_area_text h1 {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+    .index_five .hero_area_text_content {
+        height: 120px;
+        padding: 20px 5px;
+        width: 200px;
+    }
+    .index_six .hero_area_text_content {
+        width: 200px;
+        height: 120px;
+        padding: 15px 5px;
+    }
+    .hero_area_text_content {
+        text-align: center;
+        display: inline-block;
+    }
+    .hero_area_text p.hero_area_btn a {
+        height: 28px;
+        line-height: 28px;
+        width: 110px;
+    }
+    .hero_area_text h1 {
+        font-size: 14px;
+        padding: 5px 0 2px;
+    }
+    .hero_area_text_content > p {
+        font-size: 12px;
+    }
+    .index_six .hero_area_text p {
+        font-size: 12px;
+    }
+    .index_six .hero_area_text h1 {
+        font-size: 15px;
+        padding: 7px 0 5px;
+    }
+    /* hero_area end */
+    .widget_headings {
+        padding: 30px 20px;
+    }
+    .section_padding {
+        padding: 30px 0;
+    }
+    .padding_bottom {
+        padding-bottom: 40px;
+    }
+    .blog_headings {
+        font-size: 18px;
+        padding: 20px 0 15px;
+    }
+    .blog_left_content {
+        padding-bottom: 30px;
+    }
+    .single_widget_about, .single_widget_form, .single_widget_catagories, .singel_widget_tab, .singel_widget_recentpost, .single_widget_review, .single_widget_archive {
+        padding: 0 25px 30px;
+    }
+    .mark_left {
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .mark_right {
+        height: 40px;
+        width: 30px;
+    }
+    .mark_right:before {
+        bottom: -50%;
+    }
+    .mark_right:after {
+        bottom: -50%;
+    }
+    .index_one .single_blog_form form input[type="email"], .index_two .single_blog_form form input[type="email"], .index_three .single_blog_form form input[type="email"], .index_four .single_blog_form form input[type="email"], .index_five .single_blog_form form input[type="email"], .index_six .single_blog_form form input[type="email"] {
+        width: 100%;
+        padding-left: 10px;
+    }
+    .single_blog_form p {
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+    .single_blog_form form input[type="submit"] {
+        margin-top: 20px;
+    }
+    .single_instagram {
+        width: 50%;
+    }
+    .single_blog_content {
+        padding: 0 25px 30px;
+    }
+    .singel_widget_tab {
+        padding-top: 30px;
+    }
+    .single_widget_form form input[type="search"] {
+        width: 80%;
+    }
+    .singel_widget_tab .nav.nav-tabs a {
+        padding: 5px 5px;
+    }
+    .single_footer {
+        margin-bottom: 30px;
+    }
+    .single_footer a i {
+        padding: 10px 10px 0 0;
+    }
+    .single_footer.footer_logo {
+        text-align: center;
+    }
+    .hero_area .owl-nav div {
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        width: 20px;
+    }
+    .single_blog_footer {
+        padding-left: 0;
+    }
+    .single_blog_footer span p {
+        padding-left: 0;
+    }
+    .single_blog_form form input[type="submit"] {
+        margin-left: 0;
+    }
+    .single_footer.copyright_text {
+        padding: 0px 0 20px;
+    }
+    .scroll {
+        bottom: 0;
+    }
+    .single_blog_form p {
+        font-size: 16px;
+    }
+    .single_blog_form p span {
+        font-size: 18px;
+    }
+    .single_blog_form form {
+        width: 100%;
+    }
+    .single_blog_meta li {
+        display: block;
+        padding-bottom: 10px;
+    }
+    .single_blog_footer span {
+        float: left;
+    }
+    .singel_widget_tab .nav.nav-tabs li {
+        padding: 0 3px;
+    }
+    .single_product_list p {
+        padding: 0 0 0 90px;
+    }
+    .single_blog_bottom p {
+        font-size: 14px;
+        line-height: 25px;
+        padding: 8px 0;
+    }
+    .single_blog_footer span.footer_social {
+        float: left;
+    }
+    .footer_share {
+        padding: 8px 8px 8px 0;
+    }
+    .index_three .single_blog_footer span a i {
+        padding: 10px 4px;
+    }
+    .index_six .pagination_area {
+        padding-bottom: 30px;
+    }
+    
+    /* this responsive is for video */
+    .video_control i {
+        border: 1px solid #fff;
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+        margin-left: -30px;
+        margin-top: -30px;
+        width: 60px;
+    }
+    
+    /* this code is for irame */
+    .index_two .blog_sound_cloud iframe, .index_three .blog_sound_cloud iframe, .index_four .blog_sound_cloud iframe, .index_six .blog_sound_cloud iframe {
+        height: 200px;
+    }
+    /* ================= this code is for about page ================== */
+    .about_page_content .single_blog_bottom p {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 12px 0;
+    }
+    /* ================= this code is for contact page ================== */
+    #my_location {
+        height: 250px;
+    }
+    .contact_page_info li {
+        padding: 0 0 10px 0 ;
+    }
+    .contact_page_form form input[type="text"], .contact_page_form form input[type="email"] {
+        width: 100%;
+    }
+    /* ===================== this code is for single page ==================== */
+    .single_blog_page_author_img img {
+        width: 100%;
+    }
+    .single_blog_page_author_para {
+        padding-left: 0;
+        padding-top: 25px;
+    }
+    .single_blog_page_author_img {
+        float: none;
+    }
+    .single_blog_page_might_like {
+        padding-bottom: 25px;
+    }
+    .singel_blog_page_commentars {
+        float: none;
+    }
+    .single_blog_page_comments_content {
+        padding-left: 0;
+        padding-top: 25px;
+    }
+    .single_blog_page_single_comments.even {
+        padding-left: 0;
+    }
+    .singel_blog_page_commentars {
+        text-align: center; 
+    }
+    .single_blog_page_form input[type="text"], .single_blog_page_form input[type="email"], .single_blog_page_form input[type="text"] {
+        width: 100%;
+    }
+    .single_blog_page_might_like {
+        text-align: center;
+    }
+    .single_blog_content.single_blog_page_might_like_lists h2 {
+        text-align: center;
+    }
+    .single_blog_content.single_blog_page_comments_lists h2 {
+        text-align: center;
+    }
+}
+/* ============================================
+                For large mobile
+============================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .header_social_icon form input[type="search"]:focus {
+        width: 180px;
+    }
+    .single_blog_meta li {
+        padding-right: 12px;
+    }
+    .single_blog_meta li span {
+        margin-right: 5px;
+    }
+    .index_six .single_blog_meta li {
+        padding-right: 5px;
+    }
+    .hero_area_text_content {
+        padding: 15px 20px;
+    }
+    .hero_area_text h1 {
+        font-size: 18px;
+    }
+    .single_blog_meta li {
+        display: inline-block;
+        padding-bottom: 0;
+    }
+    .single_blog_form p {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+    .single_blog_form p span {
+        font-size: 20px;
+    }
+    .hero_area .owl-nav div {
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+    }
+    .singel_widget_tab .nav.nav-tabs a {
+        padding: 8px 15px;
+    }
+    .index_one .hero_area_text_content {
+        padding: 28px 30px;
+    }
+    .index_two .hero_area .owl-item.active .hero_area_text {
+        top: calc(100% - 120px);
+    }
+    .index_two .hero_area_text_content {
+        height: 120px;
+        width: 250px;
+        padding: 20px 10px;
+    }
+    .index_six .hero_area_text_content {
+        width: 250px;
+    }
+    .video_control i {
+        height: 130px;
+        width: 130px;
+        border: 3px solid #fff;
+        line-height: 130px;
+        font-size: 40px;
+        margin-top: -65px;
+        margin-left: -75px;
+    }
+    .single_blog_footer span {
+        float: left;
+    }
+    .single_blog_footer span.footer_social {
+        float: right;
+    }
+    .index_two .single_blog_footer span {
+        float: right;
+    }
+    .index_three .hero_area_text_content {
+        height: 180px;
+        padding: 40px 0;
+        width: 280px;
+    }
+    .index_three .hero_area_text p.hero_area_btn a {
+        width: 120px;
+    }
+    .index_three .hero_area_text h1, .index_four .hero_area_text h1 {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+    .index_four .single_blog_meta li {
+        padding-right: 5px;
+    }
+    .index_four .hero_area_text_content {
+        height: 160px;
+        padding: 30px 0;
+        width: 300px;
+    }
+    .index_five .hero_area_text_content {
+        height: 160px;
+        padding: 35px 5px;
+        width: 300px;
+    }
+    .index_five .hero_area_text h1 {
+        padding: 15px 0 10px;
+    }
+    /* ================= this code is for contact page ================== */
+    .contact_page_info li {
+        padding: 0 15px 10px;
+    }
+}
+

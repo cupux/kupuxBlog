@@ -1,0 +1,129 @@
+{% extends 'myblog/base.html'%}
+
+{% block content %}
+
+
+           <!-- this code is for blog_left_content -->
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="blog_left_content">
+                    {% if messages %}
+                            {% for message in messages %}
+                            <div class="alert alert-info" role="alert">
+                                {{ message }}
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+
+
+                    <div class="single_blog padding_bottom">
+                        
+
+                        <div class="single_blog_content">
+                            
+
+                            <div class="single_blog_bottom">
+                                <h2 class="blog_headings">{{ post.title }}</h2>
+                                <div class="single_blog_meta">
+                                    <ul>
+                                        <li><a href="#"><span class="icon-profile-male"></span> {{ post.author}}</a></li>
+                                        <li><a href="#"><span class="icon-calendar"></span> {{ post.updated|date:'F Y, dS , P'}}</a></li>
+                                        <li><a href="#"><span class="icon-chat"></span> 10 Comments</a></li>
+                                        <li><a href="#"><span class="icon-heart"></span> 20 Likes</a></li>
+                                    </ul>
+                                </div>
+                                <p>{{ post.body|safe}}</p>
+                                </div> <!-- single_blog_bottom end -->
+
+                            <div class="single_blog_footer">
+                                <span class="footer_social">
+                                <span class="footer_share">Share :</span>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="google-plus"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="tumblr"><i class="fa fa-tumblr"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="linkedin"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
+                                </span>
+                            </div> <!-- single_blog_footer end -->
+
+                        </div> <!-- single_blog_content end -->
+
+                    </div> <!-- single_blog end -->
+
+                    <div class="single_blog padding_bottom">
+
+                        <div class="single_blog_content single_blog_page_author">
+                            <h3>author<span>Mou</span></h3>
+                            <div class="single_blog_page_author_img">
+                                <a href="#"><img src="img/single_blog_page_author.jpg" alt=""></a>
+                            </div>
+                            <div class="single_blog_page_author_para">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                            </div>
+                            <div class="single_blog_page_author_social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div> <!-- single_blog_content end -->
+
+                    </div> <!-- single_blog end -->
+
+                    <div class="single_blog padding_bottom">
+
+                        <div class="single_blog_content single_blog_page_might_like_lists">
+                            <div class="row">
+                                <h2>You Might Also Like</h2>
+                                {% for trip in related_post %}
+                                <div class="col-sm-4">
+                                    <div class="single_blog_page_might_like">
+                                        <h3><a href="#">{{ trip.title }}</a></h3>
+                                        <p><span class="icon-profile-male"></span> {{ trip.author }}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div> <!-- row end -->
+                        </div> <!-- single_blog_content end -->
+
+                    </div> <!-- single_blog end -->
+
+                    <div class="single_blog padding_bottom">
+
+                        <div class="single_blog_content single_blog_page_comments_lists">
+                    
+                            <div class="single_blog_page_form mb-3">
+                                <h2>Leave a Reply
+                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    click here
+                                  </a></h2>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body"><hr>
+                                        <form id = "comment" method="POST">
+                                            <!-- id = "comment" -->
+                                            {% csrf_token %}
+                                            <input type="text" id="name" name="name" placeholder="Name: " required>
+                                            <input type="email" id="email" name="email" placeholder="Email: " required>
+                                            <textarea name="message" id="message" placeholder="Message: " required></textarea>
+                                            <input id="submit" type="submit" value="Post Comment" required>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> <!-- single_blog_page_form end -->
+                            <hr>
+                    
+                            
+                            <div id="comment_section">
+                                {%include "myblog/comment_section.html"%}
+                            </div>
+                    
+                    
+                        </div> <!-- single_blog_content end -->
+                    
+                    </div> <!-- single_blog end -->
+
+                    
+                </div> <!-- blog_left_content end -->
+            </div> <!-- col-md-8 end -->
+            {%include "myblog/ajax_comment.html"%}
+{% endblock content %}

@@ -1,0 +1,115 @@
+{% extends 'myblog/base.html'%}
+
+{% block content %}
+
+<!-- ======================= hero_area end ========================== -->
+
+        
+<!-- ======================= main_wrapper start ========================== -->
+            <!-- this code is for blog_left_content -->
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="blog_left_content">
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-info" role="alert">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                    {% endif %} 
+
+                    
+
+                    {% for post in posts %}
+                        {% if user.is_authenticated %}
+                            <div class="single_blog padding_bottom">
+                
+                                <div class="single_blog_content">
+                                    
+                                    <div class="single_blog_bottom">
+                                        <h2 class="blog_headings"><a href="{{ post.get_absolute_url1 }}">{{ post.title }}</a></h2>
+                                    <br>
+                                        {% if user.is_authenticated %}
+                                        <a class="btn btn-info" href="{% url 'myblog:edit' post.id %}">Edit</a>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
+                                            Delete
+                                        </button>
+                                        {% endif %}
+                                        
+                                    
+                                        <div class="single_blog_meta">
+                                            <ul>
+                                                <li><span class="icon-profile-male"></span> {{ post.author}}</li>
+                                                <li><span class="icon-calendar"></span> {{ post.updated|date:'F Y, dS , P'}}</li>
+                                                <li><span class="icon-chat"></span> 10 Comments</li>
+                        
+                                            </ul>
+                                        </div>
+                                    </div> <!-- single_blog_bottom end -->
+                                    
+                                </div> <!-- single_blog_content end -->
+                                
+                                
+                            </div>
+                        {%else%}
+                    <div class="single_blog padding_bottom">
+            
+                        <div class="single_blog_content">
+                            
+                            <div class="single_blog_bottom">
+                                <h2 class="blog_headings"><a href="{{ post.get_absolute_url1 }}">{{ post.title }}</a></h2>
+                               <br>
+                                {% if user.is_authenticated %}
+                                <a class="btn btn-info" href="{% url 'myblog:edit' post.id %}">Edit</a>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+                                    Delete
+                                  </button>
+                                {% endif %}
+                                
+                               
+                                <div class="single_blog_meta">
+                                    <ul>
+                                        <li><span class="icon-profile-male"></span> {{ post.author}}</li>
+                                        <li><span class="icon-calendar"></span> {{ post.updated|date:'F Y, dS , P'}}</li>
+                                        
+                  
+                                    </ul>
+                                </div>
+                                <p>{{ post.body|truncatewords:20|safe}}</p>
+                            </div> <!-- single_blog_bottom end -->
+                            
+                            <div class="single_blog_footer">
+                                <p><a href="{{ post.get_absolute_url1 }}">Continue Reading <i class="fa fa-long-arrow-right"></i> </a></p>
+                                <span class="footer_social">
+                                <span class="footer_share">Share :</span>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="google-plus"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="tumblr"><i class="fa fa-tumblr"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="linkedin"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
+                                </span>
+                            </div> <!-- single_blog_footer end -->
+                            
+                        </div> <!-- single_blog_content end -->
+                        
+                        
+                    </div>
+                    {%endif%} <!-- single_blog end -->
+                    {%include "myblog/delete_modal.html"%}
+                    {% endfor %}
+                    
+                    {%include "myblog/pagination.html"%}
+
+
+                </div> <!-- blog_left_content end -->
+                
+            </div> <!-- col-md-8 end -->
+
+
+           <!-- ********** this code is for blog_right_content ********** --> 
+
+<!-- ======================= main_wrapper end ========================== -->
+  
+  
+        
+{% endblock content %}

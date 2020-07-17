@@ -1,0 +1,50 @@
+<script type="text/javascript">
+    $(document).on('submit','#comment',function(e){
+        e.preventDefault();
+        console.log($(this).serialize());
+        $.ajax({
+            type:'POST',
+            url:$(this).attr('action'),
+            data: $(this).serialize(),
+            dateType:'json',
+            success:function(response){
+                $('#comment_section').html(response['form'])
+                console.log($('comment_section').html(response['form']))
+                $("#name").val("");
+                $("#email").val("");
+                $("#message").val("");
+            },
+            error: function(rs, e){
+                console.log(rs.responseText);
+            }
+        });
+  });
+
+
+
+
+    $(document).on('submit','#reply_form',function(e){
+        e.preventDefault();
+        console.log($(this).serialize());
+        $.ajax({
+            type:'POST',
+            url:$(this).attr('action'),
+            data: $(this).serialize(),
+            dateType:'json',
+            success:function(response){
+                $('#comment_section').html(response['form'])
+                console.log($('comment_section').html(response['form']))
+                $("#name").val("");
+                $("#email").val("");
+                $("#message").val("");
+            },
+            error: function(rs, e){
+                console.log(rs.responseText);
+            }
+        });
+  });
+
+    
+
+    
+</script>
